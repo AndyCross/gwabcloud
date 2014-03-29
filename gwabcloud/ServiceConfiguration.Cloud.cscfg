@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="gwabcloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="gwabweb">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="storageAccount" value="DefaultEndpointsProtocol=https;AccountName=cpnewaccount;AccountKey=QdyuIzBxnytdrlV5Qp81uQQN87Ec13vC0JFHujSNU/iKQZr4raUJCDgNFu7C+IVJ74kWCwtWaig4/HBJCAANyg==" />
+      <Setting name="containerName" value="gwabcontainer" />
+      <Setting name="queueName" value="gwabqueue" />
+      <Setting name="tableName" value="speakers" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="gwabworker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="storageAccount" value="DefaultEndpointsProtocol=https;AccountName=cpnewaccount;AccountKey=QdyuIzBxnytdrlV5Qp81uQQN87Ec13vC0JFHujSNU/iKQZr4raUJCDgNFu7C+IVJ74kWCwtWaig4/HBJCAANyg==" />
+      <Setting name="containerName" value="gwabcontainer" />
+      <Setting name="queueName" value="gwabqueue" />
+      <Setting name="tableName" value="speakers" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
